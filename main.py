@@ -7,6 +7,11 @@ user_ids = {'ObiWanKnewby': '302872844487098379'}
 
 
 def main(argv):
+
+    if len(argv) < 2:
+        print("!!! Expected 2 arguments, but was given {} arguments !!!".format(len(argv)))
+        return
+
     url = str(argv[0])
     trigger_price = float(argv[1])
 
